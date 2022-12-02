@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <h1>JavaScript String Operation</h1>
+    <!-- <script>
+      let str = "suman";
+      let greet = `Hi ${str}`;
+      console.log(greet);
+    </script> -->
+    <!-- <script>
+      let promise = new Promise(function (resolve, reject) {
+        setTimeout(() => {
+          resolve("Promise resolved");
+        }, 4000);
+      });
+      async function myFunc(){
+        let res=await promise;
+        console.log(res);
+      }
+      myFunc();
+    </script> -->
+    <!-- <script>
+      function outerFun(name, callback) {
+        console.log("Hello" + name);
+        callback();
+      }
+      function innerFun() {
+        console.log("Function called");
+      }
+      outerFun("Suman", innerFun);
+    </script> -->
+    <script>
+      let myPromise = new Promise(function (myResolve, myreject) {
+        let x = 10;
+        if (x == 0) {
+          myResolve("Promise resolved");
+        } else {
+          myreject("promise not resolved");
+        }
+      });
+      myPromise.then(
+        function (value) {
+          console.log(value);
+        },
+        function (error) {
+          console.log(error);
+        }
+      );
+    </script>
+  </body>
+</html>
